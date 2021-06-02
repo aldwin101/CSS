@@ -1,6 +1,6 @@
 div {
     background-color:#ffc90e;
-    width:920px;
+    width:61%;
     height:450px;
     border-style:solid;
 }
@@ -11,7 +11,7 @@ div {
     width:200px;
     height:400px;
     border-style:solid;
-    margin: 20px 10px 20px 30px;
+    margin: 15pt 7.5pt 15pt 22.5pt;
 }
 
 .box2 {
@@ -20,7 +20,7 @@ div {
     width:200px;
     height:400px;
     border-style:solid;
-    margin: 20px 10px 20px 10px;
+    margin: 1.25rem .63em 1.25rem .63em;
 }
 
 .box3 {
@@ -29,7 +29,7 @@ div {
     width:200px;
     height:400px;
     border-style:solid;
-margin: 20px 5px 20px 10px;
+margin: 2.8vh .32vw 2.8vh .65vw;
 }
 
 .box4 {
