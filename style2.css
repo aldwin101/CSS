@@ -1,0 +1,73 @@
+* {
+    margin:0%;
+    padding:0%;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ecaaaa;
+}
+
+nav {
+    background-color: #C44E4E;
+    display: grid;
+    grid-template-rows: 7fr 10fr 5fr;
+    width: 18vw;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left:0%;
+}
+
+ul {
+    display: grid;
+    grid-gap: 2vw;
+    list-style-type: none;
+    margin-bottom: 10vh;
+}
+
+.button {
+    padding: .5vw;
+}
+
+#logo {
+    width: 13vw;
+}
+
+#social-media p {
+    text-align: center;
+    padding: 2vh;
+}
+
+.socmed-image {
+    width: 2vw;
+    margin: .5vw;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+main {
+    background-color: black;
+}
+
+#video {
+    margin-left: 41vw;
+}
+
+iframe {
+    border-radius: 2vw;
+}
+
+#pizza {
+    border-radius: 2vw;
+    width: 36.5vw;
+    margin-left: 41vw;
+}
