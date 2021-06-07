@@ -31,7 +31,8 @@ ul {
 }
 
 .button {
-    padding: .5vw;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #logo {
@@ -46,6 +47,13 @@ ul {
 .socmed-image {
     width: 2vw;
     margin: .5vw;
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function:ease-in;
+}
+
+.socmed-image:hover {
+    transform: scale(1.2);
 }
 
 main {
@@ -55,19 +63,47 @@ main {
 }
 
 main {
-    background-color: black;
+    background-color: rgb(73, 73, 73);
 }
 
-#video {
-    margin-left: 41vw;
-}
-
-iframe {
+#video {    
     border-radius: 2vw;
+    margin-left: 41vw;
 }
 
 #pizza {
     border-radius: 2vw;
     width: 36.5vw;
     margin-left: 41vw;
+}
+
+@keyframes btn-animation {
+    0% { transform: translateX(0%);} 
+    25% { transform: translateX(-30%);} 
+    50% { transform: translateX(20%);} 
+    75% { transform: translateX(-10%);} 
+    100% { transform: translateX(0%);}
+    
+}
+
+li:hover {
+    animation-name: btn-animation;
+    animation-duration: 1.5s;
+    animation-timing-function:ease;
+}
+
+@keyframes brand-logo {
+    from {
+    transform: rotate(0deg);
+}
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+#logo {
+    animation-name: brand-logo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
 }
