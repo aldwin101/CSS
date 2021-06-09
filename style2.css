@@ -7,13 +7,14 @@
 }
 
 body {
-    background-color: #ecaaaa;
+    background-color: #494949;
 }
 
 nav {
+    grid-template-rows: repeat(auto-fit, minmax(305px, 1fr));
     background-color: #C44E4E;
     display: grid;
-    grid-template-rows: 7fr 10fr 5fr;
+    grid-template-rows: 5fr 10fr 5fr;
     width: 18vw;
     height: 100%;
     justify-items: center;
@@ -31,12 +32,16 @@ ul {
 }
 
 .button {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 10px;
+    font-weight: normal;
 }
 
 #logo {
     width: 13vw;
+}
+
+#social-media {
+    visibility: hidden;
 }
 
 #social-media p {
@@ -63,10 +68,11 @@ main {
 }
 
 main {
-    background-color: rgb(73, 73, 73);
+    background-color: #494949;
 }
 
-#video {    
+#video {
+    visibility: hidden;
     border-radius: 2vw;
     margin-left: 41vw;
 }
@@ -106,4 +112,21 @@ li:hover {
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-delay: 1s;
+}
+
+@media only screen and (min-width: 665px) {
+    #social-media {
+        visibility: visible;
+        text-align: center;
+    }
+    .button {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+
+@media only screen and (min-width: 800px) {
+    div #video {
+        visibility: visible;
+    }
 }
