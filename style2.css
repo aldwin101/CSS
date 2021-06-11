@@ -1,132 +1,70 @@
 * {
-    margin:0%;
-    padding:0%;
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: large;
 }
 
 body {
-    background-color: #494949;
+  background-color: #8d7575;
 }
 
 nav {
-    grid-template-rows: repeat(auto-fit, minmax(305px, 1fr));
-    background-color: #C44E4E;
-    display: grid;
-    grid-template-rows: 5fr 10fr 5fr;
-    width: 18vw;
-    height: 100%;
-    justify-items: center;
-    align-items: center;
-    position: fixed;
-    top: 0%;
-    left:0%;
+  background-color: #8a3d3d;
+  -ms-grid-columns: (minmax(305px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5fr 10fr 5fr;
+      grid-template-rows: 5fr 10fr 5fr;
+  width: 18vw;
+  height: 100%;
+  justify-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
 
 ul {
-    display: grid;
-    grid-gap: 2vw;
-    list-style-type: none;
-    margin-bottom: 10vh;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  margin-top: 30vh;
+  grid-gap: 2vw;
+  list-style-type: none;
 }
 
 .button {
-    font-size: 10px;
-    font-weight: normal;
-}
-
-#logo {
-    width: 13vw;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #social-media {
-    visibility: hidden;
+  position: relative;
+  margin-top: 20vh;
 }
 
 #social-media p {
-    text-align: center;
-    padding: 2vh;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2vh;
 }
 
-.socmed-image {
-    width: 2vw;
-    margin: .5vw;
-    transition-property: all;
-    transition-duration: .1s;
-    transition-timing-function:ease-in;
+#social-media .socmed-image {
+  width: 2vw;
+  margin: .5vw;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
-.socmed-image:hover {
-    transform: scale(1.2);
+#social-media .socmed-image:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
-
-main {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-}
-
-main {
-    background-color: #494949;
-}
-
-#video {
-    visibility: hidden;
-    border-radius: 2vw;
-    margin-left: 41vw;
-}
-
-#pizza {
-    border-radius: 2vw;
-    width: 36.5vw;
-    margin-left: 41vw;
-}
-
-@keyframes btn-animation {
-    0% { transform: translateX(0%);} 
-    25% { transform: translateX(-30%);} 
-    50% { transform: translateX(20%);} 
-    75% { transform: translateX(-10%);} 
-    100% { transform: translateX(0%);}
-    
-}
-
-li:hover {
-    animation-name: btn-animation;
-    animation-duration: 1.5s;
-    animation-timing-function:ease;
-}
-
-@keyframes brand-logo {
-    from {
-    transform: rotate(0deg);
-}
-    to {
-    transform: rotate(360deg);
-    }
-}
-
-#logo {
-    animation-name: brand-logo;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 1s;
-}
-
-@media only screen and (min-width: 665px) {
-    #social-media {
-        visibility: visible;
-        text-align: center;
-    }
-    .button {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-    }
-
-@media only screen and (min-width: 800px) {
-    div #video {
-        visibility: visible;
-    }
-}
+/*# sourceMappingURL=style2.css.map */

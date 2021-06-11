@@ -1,0 +1,13 @@
+$bckgrnd_clr: #8d7575;
+$nav_bar_color: #8a3d3d;
+$button_font_size: 2rem;
+
+@mixin social_media_button() {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:ease-in;
+}
+
+@mixin socmed_button_hover() {
+    transform: scale(1.5);
+}
